@@ -37,6 +37,9 @@ JWT_SECRET="..."
 # start database
 $ yarn run db:dev:up
 
+# set up database (first time only)
+$ yarn run prisma:dev:deploy
+
 # development
 $ yarn run start
 
@@ -45,6 +48,22 @@ $ yarn run start:dev
 
 # production mode
 $ yarn run start:prod
+```
+
+## 💻 Running Lambda locally
+
+It's necessary to have the AWS CLI installed and configured with the credentials of the AWS account where the lambda is deployed.
+Also it's necessary to have the Serverless framework installed globally.
+
+```bash
+# start database
+$ yarn run db:dev:up
+
+# set up database (first time only)
+$ yarn run prisma:dev:deploy
+
+# development
+$ yarn run start:lambda
 ```
 
 ## 🧪 Tests
