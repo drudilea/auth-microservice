@@ -76,6 +76,18 @@ $ yarn run prisma:dev:deploy
 $ yarn run start:lambda
 ```
 
+## 🪲 Debugger
+
+Add corresponding breakpoints in the code.
+
+Run the app with the debug NestJS script
+
+```bash
+$ yarn run start:debug
+```
+
+Then run the `Debug` configuration in VSCode.
+
 ## 🧪 Tests
 
 ```bash
