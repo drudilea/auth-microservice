@@ -38,7 +38,7 @@ JWT_SECRET="..."
 It's needed to re-run the `prisma generate` command after every change that's made to your Prisma schema to update the generated Prisma Client code.
 
 ```bash
-$ prisma generate
+$ yarn prisma generate
 ```
 
 ## 💻 Running the app locally
