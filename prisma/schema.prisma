@@ -22,3 +22,17 @@ model User {
 
   @@map("users")
 }
+
+model TiendanubeUser {
+  id          String   @id @default(uuid())
+  userId      Int      @unique
+  email       String   @unique
+  accessToken String
+  firstName   String?
+  lastName    String?
+  hash        String? // TODO dejar o sacar
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("tiendanube_users")
+}

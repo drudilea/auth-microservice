@@ -35,10 +35,10 @@ JWT_SECRET="..."
 
 ### Prisma
 
-It's needed to re-run the `prisma generate` command after every change that's made to your Prisma schema to update the generated Prisma Client code.
+It's needed to re-run the `prisma migrate dev` command after every change that's made to your Prisma schema to update the generated SQL code to create or edit tables. At the end of the migration, the Prisma schema will be updated and the Prisma Client will be regenerated automatically.
 
 ```bash
-$ yarn prisma generate
+$ yarn prisma migrate dev
 ```
 
 ## 💻 Running the app locally
